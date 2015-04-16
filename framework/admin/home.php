@@ -414,7 +414,7 @@ function soulmedic_geo_support() {
     
     <h3>Responsive Styled Google Maps Settings</h3>
     <hr />
-    <p>Allowed WM4D Shortcodes only work within the <strong>( description="" )</strong> tag.<br />
+    <p>Allowed WM4D Shortcodes only work within <strong>( address="" and description="" )</strong> tags.<br />
 		<a href="?page=wm4d_options">Click here</a> to get ID numbers of each item.</p>
     <div class="soulmedic_geo_wm4d_section support">
     <table border="0" cellspacing="0" cellpadding="8" class="soulmedic_geo_wm4d_table_support">
@@ -422,6 +422,18 @@ function soulmedic_geo_support() {
             <th>Input / Section</th>
             <th>Allowed WM4D Shortcodes</th>
         </thead>
+        <tr>
+            <td><strong>Address</strong> - (Map Address)</td>
+            <td><strong>%practice_name%</strong><br />
+				<?php if ( get_option('wm4d_multiple_select') != 'enable') { ?>
+                    <strong>%location%</strong><br />
+                <?php } ?>
+ 				<?php if ( get_option('wm4d_multiple_select') == 'enable') { ?>
+                    <strong>%locations%</strong><br />
+                    <strong>%locations_#%</strong><br />
+                <?php } ?>
+            </td>
+        </tr>
         <tr>
             <td><strong>Description</strong> - (Map Details)</td>
             <td><strong>%client_name%</strong><br />
