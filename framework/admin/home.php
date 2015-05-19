@@ -60,6 +60,15 @@ function soulmedic_geo_support() {
             </td>
         </tr>
         <tr>
+            <td><strong>Doctor Name with Titles</strong></td>
+            <td><strong>%doctor_title%</strong></td>
+            <td><strong>Menu</strong><br />
+            	<strong>Title Box</strong><br />
+                <strong>Title Box Colored</strong><br />
+                <strong>Info Box</strong><br />
+            </td>
+        </tr>
+        <tr>
             <td><strong>Phone Number</strong></td>
             <td><strong>%phone_number%</strong></td>
             <td><strong>Title Box</strong><br />
@@ -84,6 +93,19 @@ function soulmedic_geo_support() {
             <td><strong>%doctor_names%</strong><br />
             	-- show all doctors' names<br />
             	<strong>%doctor_names_#%</strong><br />
+                -- <strong>#</strong> - ID number of the doctor
+            </td>
+            <td><strong>Menu</strong><br />
+            	<strong>Title Box</strong><br />
+                <strong>Title Box Colored</strong><br />
+                <strong>Info Box</strong><br />
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Doctor Names with Titles</strong></td>
+            <td><strong>%doctor_titles%</strong><br />
+            	-- show all doctors' names with titles<br />
+            	<strong>%doctor_titles_#%</strong><br />
                 -- <strong>#</strong> - ID number of the doctor
             </td>
             <td><strong>Menu</strong><br />
@@ -162,12 +184,15 @@ function soulmedic_geo_support() {
             	<strong>%practice_name%</strong><br />
 				<?php if ( get_option('wm4d_multiple_select') != 'enable') { ?>
                     <strong>%doctor_name%</strong><br />
+                    <strong>%doctor_title%</strong><br />
                     <strong>%phone_number%</strong><br />
                     <strong>%location%</strong><br />
                 <?php } ?>
  				<?php if ( get_option('wm4d_multiple_select') == 'enable') { ?>
                     <strong>%doctor_names%</strong><br />
                     <strong>%doctor_names_#%</strong><br />
+                    <strong>%doctor_titles%</strong><br />
+                    <strong>%doctor_titles_#%</strong><br />
                     <strong>%phone_numbers%</strong><br />
                     <strong>%phone_numbers_#%</strong><br />
                     <strong>%locations%</strong><br />
@@ -183,12 +208,15 @@ function soulmedic_geo_support() {
             	<strong>%practice_name%</strong><br />
 				<?php if ( get_option('wm4d_multiple_select') != 'enable') { ?>
                     <strong>%doctor_name%</strong><br />
+                    <strong>%doctor_title%</strong><br />
                     <strong>%phone_number%</strong><br />
                     <strong>%location%</strong><br />
                 <?php } ?>
  				<?php if ( get_option('wm4d_multiple_select') == 'enable') { ?>
                     <strong>%doctor_names%</strong><br />
                     <strong>%doctor_names_#%</strong><br />
+                    <strong>%doctor_titles%</strong><br />
+                    <strong>%doctor_titles_#%</strong><br />
                     <strong>%phone_numbers%</strong><br />
                     <strong>%phone_numbers_#%</strong><br />
                     <strong>%locations%</strong><br />
@@ -204,12 +232,15 @@ function soulmedic_geo_support() {
             	<strong>%practice_name%</strong><br />
 				<?php if ( get_option('wm4d_multiple_select') != 'enable') { ?>
                     <strong>%doctor_name%</strong><br />
+                    <strong>%doctor_title%</strong><br />
                     <strong>%phone_number%</strong><br />
                     <strong>%location%</strong><br />
                 <?php } ?>
  				<?php if ( get_option('wm4d_multiple_select') == 'enable') { ?>
                     <strong>%doctor_names%</strong><br />
                     <strong>%doctor_names_#%</strong><br />
+                    <strong>%doctor_titles%</strong><br />
+                    <strong>%doctor_titles_#%</strong><br />
                     <strong>%phone_numbers%</strong><br />
                     <strong>%phone_numbers_#%</strong><br />
                     <strong>%locations%</strong><br />
@@ -454,12 +485,15 @@ function soulmedic_geo_support() {
             	<strong>%practice_name%</strong><br />
 				<?php if ( get_option('wm4d_multiple_select') != 'enable') { ?>
                     <strong>%doctor_name%</strong><br />
+                    <strong>%doctor_title%</strong><br />
                     <strong>%phone_number%</strong><br />
                     <strong>%location%</strong><br />
                 <?php } ?>
  				<?php if ( get_option('wm4d_multiple_select') == 'enable') { ?>
                     <strong>%doctor_names%</strong><br />
                     <strong>%doctor_names_#%</strong><br />
+                    <strong>%doctor_titles%</strong><br />
+                    <strong>%doctor_titles_#%</strong><br />
                     <strong>%phone_numbers%</strong><br />
                     <strong>%phone_numbers_#%</strong><br />
                     <strong>%locations%</strong><br />
