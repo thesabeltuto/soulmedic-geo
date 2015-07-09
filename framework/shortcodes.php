@@ -12,10 +12,10 @@ function my_dynamic_menu_items( $menu_items ) {
 			$title = get_general_data('practice_name', $title);
         }
         if ( preg_match('%doctor_name%', $title) ) {
-			$title = get_general_data('doctor_name', $title);
+			$title = get_multi_data('doctor_name', $title);
         }
         if ( preg_match('%doctor_title%', $title) ) {
-			$title = get_general_data('doctor_title', $title);
+			$title = get_multi_data('doctor_title', $title);
         }
         if ( preg_match('%location%', $title) ) {
 			$title = get_general_data('location', $title);
@@ -250,6 +250,9 @@ function call_address_shortcode($address, $line){
 			return $address;
 			break;
 		}
+	}
+	else {
+		return $address;
 	}
 }
 
