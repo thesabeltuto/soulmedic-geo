@@ -5,7 +5,7 @@ define('THEME_DIR', get_template_directory().'-geo');
 define('THEME_URL', get_template_directory_uri().'-geo');
 
 // Global variables
-$THEME_VERSION = '1.1.0';
+$THEME_VERSION = '1.1.1';
 $THEME_CSS_VERSION = '1.0.9';
 
 require_once(THEME_DIR.'/framework/admin.php');
