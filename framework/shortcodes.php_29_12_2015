@@ -289,8 +289,7 @@ function call_description_shortcode($description,$skip_phone=false){
 
 			//$string .= $practice . '{br}';
 			$string .= $locations . '{br}';
-			//$string .= 'Phone: ' . $v . ' | ';
-			 $string .='Phone: <a href="tel:'.$v.'">'.$v.'</a> | ';
+			$string .= 'Phone: ' . $v . ' | ';
 		}
 		
 		$description = $string;

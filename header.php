@@ -106,11 +106,11 @@
                 global $post;
                 procedure_slider_out( $post->ID);
             elseif( is_post_type_archive('product') ):
-                dttheme_slider_section( get_option('woocommerce_shop_page_id') );	
+				dttheme_slider_section( get_option('woocommerce_shop_page_id') );	
             endif;		
             
             if( is_page_template('tpl-contact.php') ):
-                global $post;
+				global $post;
                 $tpl_default_settings = get_post_meta($post->ID,'_tpl_default_settings',TRUE);
                 $tpl_default_settings = is_array($tpl_default_settings) ? $tpl_default_settings  : array();
                 if(array_key_exists("full-width-section",$tpl_default_settings)):
