@@ -587,7 +587,7 @@ function responsive_map_shortcode_edited($atts) {
       $markers = '[';
 
       for($i = 0;$i < count($addresses);$i ++) {
-        $address = cleanHtml($addresses[$i]);
+        $address = resmap_cleanHtml($addresses[$i]);
         
         // If multiple markers, hide popup, else show popup according to parameter from shortcode
         if (count($addresses) > 1) {
@@ -606,7 +606,7 @@ function responsive_map_shortcode_edited($atts) {
         $html .= '<strong><br><a target=\'_blank\' href="'. $directions .'">'. $atts['directionstext'] .'</a></strong>' ;
         
         // Prepare the description html
-        $html = cleanHtml($html);
+        $html = resmap_cleanHtml($html);
         
         // Get the correct icon image based on icon color/url given in the shortcode
         $icon = getIcon($icons[$i]);
