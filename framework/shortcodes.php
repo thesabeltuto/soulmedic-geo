@@ -609,7 +609,7 @@ function responsive_map_shortcode_edited($atts) {
         $html = resmap_cleanHtml($html);
         
         // Get the correct icon image based on icon color/url given in the shortcode
-        $icon = getIcon($icons[$i]);
+        $icon = resmap_getIcon($icons[$i]);
         
         // Extract the langitude and longitude for the map center
         $marker_latitude = null;
