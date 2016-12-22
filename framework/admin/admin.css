@@ -4,6 +4,7 @@
 /** GENERAL **/
 
 .soulmedic_geo_wm4d_wrap h1 { background: #2ea2cc; padding: 15px; margin: 10px 0; color: #fff; text-shadow: 1px 1px 1px #1D4E61; border-bottom: 8px solid #1E8DBB;}
+.soulmedic_geo_wm4d_wrap h1 span { font-size: medium; text-align: right; float: right; }
 
 .soulmedic_geo_wm4d_wrap a, .soulmedic_geo_wm4d_wrap a:visited, .soulmedic_geo_wm4d_wrap a:active { color: #0074a2; }
 .soulmedic_geo_wm4d_wrap a:hover { color: #2ea2cc; }

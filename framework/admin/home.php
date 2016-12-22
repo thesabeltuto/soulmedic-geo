@@ -2,7 +2,7 @@
 function soulmedic_geo_support() {
 	?>
     <div class="soulmedic_geo_wm4d_wrap">
-    <h1>Soulmedic Theme and WM4D Options Integration Support</h1>
+    <h1>Soulmedic Geo Theme and WM4D Options Integration Support <span>Version <?=$GLOBALS['THEME_VERSION']?></span></h1>
     <div id="wm4d_nav">
         <ul>
             <li id="soulmedic_geo_wm4d_li0" class="active"><a href="?page=soulmedic_geo_support">Home</a></li>
@@ -18,7 +18,7 @@ function soulmedic_geo_support() {
     <hr />
     <p>Inception, I know...</p>
 
-    <h3>Soulmedic-WM4D Integration Shortcodes</h3>
+    <h3>Soulmedic and WM4D Integration Shortcodes</h3>
     <hr />
     <p>Allowed WM4D Shortcodes only work within <strong>( title="", phone="", location="", url="" )</strong> tags.<br />
     	Otherwise, use the original shortcode stated in the WM4D Options Plugin.<br />
