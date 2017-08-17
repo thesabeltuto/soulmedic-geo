@@ -25,7 +25,7 @@ $dttheme_general = $dttheme_options['general'];?>
 						<?php
 						endif;
 						if( !empty( $dttheme_general['show-copyrighttext']) ):
-					  echo "<div class='copyright-content'>".stripslashes($dttheme_general['copyright-text'])."</div>";?>
+					  echo "<div class='copyright-content'>".stripslashes(do_shortcode($dttheme_general['copyright-text']))."</div>";?>
 					  <?php
 					  endif;?>
 			</div>
